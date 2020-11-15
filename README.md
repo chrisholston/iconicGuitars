@@ -1,4 +1,4 @@
-# iconicGuitars
+# Iconic Guitars
 A CRUD web app that lets you search for iconic guitars based on your favorite genre and guitar mode using a cloud-deployed database of instruments. 
 ## Getting Started
 [
