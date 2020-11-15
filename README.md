@@ -13,11 +13,12 @@ Click Here](https://iconicGuitars.herokuapp.com/)
 * Express
 * Google Fonts
 ## ERD
-![ERD Diagram](https://trello.com/c/RD4TImtb/13-erd-chartpng)
+![ERD Diagram](https://imgur.com/VvZCtln.png)
 ## Wireframes & Completed Project Screenshots
-![Home Page Wireframe]()
-![Search Index Wireframe]()
-![Guitar Specs Database ]()
+![Home Page Wireframe](https://imgur.com/ByMjnZt.png)
+![Search Index Wireframe](https://imgur.com/vthbG3U.png)
+![Show Index Wireframe](https://imgur.com/I40nwGz.png)
+![Guitar Specs Database ](https://imgur.com/itgAAZI.png),(https://imgur.com/L4NAI77.png),(https://imgur.com/vthbG3U.png)
 ![Completed Page]()
 ### Models
 There is one model:
