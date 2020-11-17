@@ -5,7 +5,7 @@
 
 const express = require('express');
 
-//2. create the router object . once express has been required, Create a variable called router and assign that to the value of express with a router factoring. We have to capitalize the first letter and call it as a function. When they get invoked they return a single object. We store it in the variable called router. 
+//2.Create a variable called router and assign that to the value of express with a router factoring.
 const router = express.Router();
 
 
