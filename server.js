@@ -1,8 +1,6 @@
-// Require modules - we create a  variable called express and assign to the result of requiring express
+// Require modules - 
 const express = require('express');
-// create a variable called morgan this is assigned to the result of requiring morgan.
 const morgan = require('morgan');
-//create a variable named port and assign it the value of 3000.
 const port = 3000;
 
 //Router modules

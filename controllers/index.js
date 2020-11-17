@@ -1,6 +1,6 @@
 //1. require the model (optional)
 
-// const {model}= require("mongoose");
+//const {model}= require("mongoose");
 
 //2. set up module.exports - so we can export functionality. we export the index function. We will export index
 module.exports = {

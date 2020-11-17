@@ -6,7 +6,7 @@ const express = require('express');
 // create a router object
 const router = express.Router(); 
 
-// require the movie controller
+// require the guitars controller
 const guitarsCtrl = require('../controllers/guitars');
 
 // we are already at "/guitars"

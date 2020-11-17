@@ -30,7 +30,7 @@ function create(req, res) {
 function index(req, res) {
     // query the model (database) for all the guitars
     Guitar.find({}, function(err, guitars) {
-        // render a template to show all the movies
+        // render a template to show all the guitars
         res.render('guitars/index', { guitars })
     });
 }

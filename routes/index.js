@@ -1,4 +1,3 @@
-// tip-  add TODOS and use search widget to see folders that have the todo so that you can finish that work..
 
 // *a router simply routes(or maps) http requests to controller code*
 
@@ -10,7 +9,7 @@ const express = require('express');
 const router = express.Router();
 
 
-//3. Require the controller module to map requests to
+//3. Require the controller module to map requests to index
 
 const indexCtrl = require('../controllers/index');
 
