@@ -8,21 +8,24 @@
   <title>Iconic Guitars</title>
 </head>
 <body>
-    More html will go here
-    <!---- we make sure the form is routed correctly, which will go to /guitars in our routes
+ 
     <h2>Add A Guitar</h2>
 <form action="/guitars" method="POST">
   <label>Brand:
-   <input type="text" name="brand">
-  </label>
+    <select name="brand">
+    <option value="Fender">Fender</option>
+    <option value="Gibson">Gibson</option>
+    <option value="Gretsch">Gretsch</option>
+    </select>
+   </label>
   <label>Model:
    <input type="text" name="model">
   </label>
   <label>Genre:
    <select name="genre">
-   <option value="Blues">G</option>
-   <option value="Country">PG</option>
-   <option value="Rock">PG-13</option>
+   <option value="Blues">Blues</option>
+   <option value="Country">Country</option>
+   <option value="Rock">Rock</option>
    </select>
   </label>
   <label>Year: 
@@ -32,7 +35,7 @@
    <input type="text" name="story">
   </label>
   <input type="submit" value="Add Guitar">
-  -->
+ 
 </form>
 
 </body>

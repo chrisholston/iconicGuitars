@@ -1,4 +1,4 @@
-// 1ST STEP IS REQUIRE OUR MODULES (MONGOOSE)
+// 1ST STEP IS IMPORT/REQUIRE OUR MODULES (MONGOOSE)
 const mongoose =require('mongoose');
 
 // set up shortcut variables
