@@ -27,7 +27,9 @@ router.post('/new', guitarsCtrl.create);
 //router.delete('/', guitarsCtrl.delete);
 router.post('/index', guitarsCtrl.findGuitar);
 
+router.get('/search/:id/', guitarsCtrl.edit);
 
+router.put('/:id/', guitarsCtrl.update);
 
 // export your router object
 module.exports = router;

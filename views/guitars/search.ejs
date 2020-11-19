@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Guitars Edit</title>
 </head>
-<body>
-    <h1>Your Searched Items</h1>
 
-    brandSearched.brand
+<body> 
+ <h1>Update Guitars</h1>
 
-    
+ <form action="/guitars/<%= guitar._id %>?_method=PUT" method="POST" autocomplete="off">
+
+  <label>Brand:
+    <select name="Brand">
+    <option value="Fender">Fender</option>
+    <option value="Gibson">Gibson</option>
+    <option value="Gretsch">Gretsch</option>
+    </select>
+   </label>
+  <label>Model:
+   <input type="text" name="Model">
+  </label>
+  <label>Genre:
+   <select name="Genre">
+   <option value="Blues">Blues</option>
+   <option value="Country">Country</option>
+   <option value="Rock">Rock</option>
+   </select>
+  </label>
+  <label>Year: 
+   <input type="text" name="Year">
+  </label>
+  <label> Story:
+   <input type="text" name="Story">
+  </label>
+  <label> Image:
+    <input type="text" name="Image">
+   </label>
+
+    <button type="submit">Save Guitar </button>
+    </form>
 </body>
 </html>

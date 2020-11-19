@@ -10,7 +10,7 @@
     <h1>Iconic Guitars</h1>
 
     <h3>Discover new guitars based on your favorite brand and genre </h3>
-    
+  <!---
 <form action="/guitars/index" id= "search" method="POST">
   <label>Brand:
     <select name="brand">
@@ -26,11 +26,12 @@
    <option value="Rock">Rock</option>
    </select>
   </label>
-  <input type="submit" value="Search Guitars">
+  <input type="submit" value="Search Guitars"> 
   <br>
   <br>
   <br>
 </form>
+-->
 
 <a href="/guitars/new">Add A New Guitar</a>
     <br>
@@ -50,10 +51,11 @@
             <th>Image</th>
         </thead>
         <tbody>
-            <% guitars.forEach(guitar => { %>
+            <% guitars.forEach((guitar) => { %>
                 <tr><td> <form action="/guitars/<%= guitar._id%>?_method=DELETE" class="delete-form" method="POST">
                     <button type="submit">X</button>
                     </form></td>
+                    <td><a href="/guitars/search/<%= guitar._id %>">Edit</a></td>
                     <td><%= guitar.Brand %></td>
                     <td><%= guitar.Model %></td>
                     <td><%= guitar.Genre %></td>
@@ -70,7 +72,7 @@
 
 
 
- <-   -->
+
 </body>
 
 </html>

@@ -27,10 +27,17 @@ function newGuitar(req,res) {
 }
 
 
-const deleteGuitar = (req,res)=>
-    Guitar.findByIdAndDelete(req.params.id, (err, deletedGuitar)=>
-    res.redirect(`/guitars`))
-    
+const deleteGuitar = (req,res)=>{
+    Guitar.findById(req.params.id, (err, deletedGuitar)=>{
+        deletedGuitar.remove()
+        deletedGuitar.save(function(){
+        res.redirect(`/guitars`)
+        })     
+})
+}
+
+
+  
 
 
 function create(req, res) {
@@ -45,7 +52,18 @@ function create(req, res) {
         res.redirect('/guitars');
     });
 }
-
+function edit(req, res) {
+    Guitar.findById(req.params.id, function(err, guitar) {
+      res.render('guitars/search', { guitar });
+    });
+  }
+  function update(req, res) {
+    console.log(req.body)
+    Guitar.findByIdAndUpdate(req.params.id, req.body, function(err, guitar) {
+      res.redirect('/guitars')
+    });
+  }
+  
 
 
 
@@ -54,6 +72,8 @@ function create(req, res) {
     index,
     new: newGuitar,
     delete: deleteGuitar,
+    update,
     create,
-    findGuitar
+    findGuitar,
+    edit,
 }
