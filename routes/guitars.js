@@ -21,10 +21,11 @@ router.get('/new', guitarsCtrl.new);
 router.delete('/:id', guitarsCtrl.delete);
 
 // define the route for creating a new guitar POST '/'
-router.post('/', guitarsCtrl.create);
+router.post('/new', guitarsCtrl.create);
 
 // define the route for deleting a guitar
 //router.delete('/', guitarsCtrl.delete);
+router.post('/index', guitarsCtrl.findGuitar);
 
 
 

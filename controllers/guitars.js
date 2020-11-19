@@ -13,17 +13,24 @@ function index(req, res) {
 
 
 // Define the new action(controller functions)
+ const findGuitar= (req,res)=>{
+     const brand = req.body
+     Guitar.find(brand).sort("Brand").exec((err, brandSearched) =>{
+         console.log('find is working')
+     res.render('guitars/search', {brandSearched})
+     console.log(brand)
+     console.log(brandSearched)
+ })}
 
 function newGuitar(req,res) {
     res.render('guitars/new')
 }
 
-function deleteGuitar(req,res) {
-    console.log("The delete is working!")
-    Guitar.deleteOne(req.params.id);
-        res.redirect('/guitars');
-    }
 
+const deleteGuitar = (req,res)=>
+    Guitar.findByIdAndDelete(req.params.id, (err, deletedGuitar)=>
+    res.redirect(`/guitars`))
+    
 
 
 function create(req, res) {
@@ -32,7 +39,7 @@ function create(req, res) {
     const guitar = new Guitar(req.body);
 
     guitar.save(function(err) {
-        if (err) return res.render('.guitars/new')
+        if (err) return res.render('guitars/new')
         console.log(guitar)
         // after guitar is created, it will redirect
         res.redirect('/guitars');
@@ -47,5 +54,6 @@ function create(req, res) {
     index,
     new: newGuitar,
     delete: deleteGuitar,
-    create
+    create,
+    findGuitar
 }

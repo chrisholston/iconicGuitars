@@ -8,9 +8,6 @@ const Schema = mongoose.Schema;
 //initialize guitarSchema 
 
 const guitarSchema = new Schema ({
-    _id: {
-        Number
-    },
     Brand: {
         type: String,
         enum: ['Gibson', 'Fender', 'Gretsch']
