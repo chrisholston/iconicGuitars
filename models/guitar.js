@@ -8,6 +8,9 @@ const Schema = mongoose.Schema;
 //initialize guitarSchema 
 
 const guitarSchema = new Schema ({
+    _id: {
+        Number
+    },
     Brand: {
         type: String,
         enum: ['Gibson', 'Fender', 'Gretsch']
@@ -32,3 +35,4 @@ const guitarSchema = new Schema ({
 
 // NEXT STEP- go into mongoDB terminal, guitar.Create(Model:Fender)
 
+module.exports = mongoose.model('Guitar',guitarSchema );

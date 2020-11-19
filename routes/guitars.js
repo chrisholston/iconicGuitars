@@ -11,14 +11,22 @@ const guitarsCtrl = require('../controllers/guitars');
 
 // we are already at "/guitars"
 
+// define the route to display a list of guitars
+router.get('/', guitarsCtrl.index);
+
 // define your route for GET '/new`
 router.get('/new', guitarsCtrl.new);
 
-// define the route for creating a movie POST '/'
+//define the route for deleting a guitar
+router.delete('/:id', guitarsCtrl.delete);
+
+// define the route for creating a new guitar POST '/'
 router.post('/', guitarsCtrl.create);
 
-// define the route to display a list of guitars
-router.get('/', guitarsCtrl.index);
+// define the route for deleting a guitar
+//router.delete('/', guitarsCtrl.delete);
+
+
 
 // export your router object
 module.exports = router;

@@ -8,9 +8,69 @@
 </head>
 <body>
     <h1>Iconic Guitars</h1>
-    <p>Welcome!</p>
+
+    <h3>Discover new guitars based on your favorite brand and genre </h3>
+    
+    
+<form action="/guitars" method="GET">
+  <label>Brand:
+    <select name="brand">
+    <option value="Fender">Fender</option>
+    <option value="Gibson">Gibson</option>
+    <option value="Gretsch">Gretsch</option>
+    </select>
+   </label>
+  <label>Genre:
+   <select name="genre">
+   <option value="Blues">Blues</option>
+   <option value="Country">Country</option>
+   <option value="Rock">Rock</option>
+   </select>
+  </label>
+  <input type="submit" value="Search Guitars">
+  <br>
+  <br>
+  <br>
+</form>
+
     <a href="/guitars/new">Add A New Guitar</a> 
     <br>
-    <a href="/guitars">See Guitars List</a>
+    <br>
+    <br>
+    <a href="/">Home</a>
+
+    <h1>Guitars Index</h1>
+    <table>
+        <thead>
+            <th>Button</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Story</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+            <% guitars.forEach(guitar => { %>
+                <tr><td> <form action="/guitars/<%= guitar._id%>?_method=DELETE" class="delete-form" method="POST">
+                    <button type="submit">X</button>
+                    </form></td>
+                    <td><%= guitar.Brand %></td>
+                    <td><%= guitar.Model %></td>
+                    <td><%= guitar.Genre %></td>
+                    <td><%= guitar.Year %></td>
+                    <td><%= guitar.Story %></td>
+                    <td><img src='<%=guitar.Image%>' width="500" height="300"> </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+   
+
+      </form>
+
+
+
+
 </body>
 </html>
