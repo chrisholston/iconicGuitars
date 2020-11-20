@@ -1,5 +1,5 @@
-# Iconic Guitars
-A  web app utilizing Crud Operations which allowing users to discover iconic guitars based on your favorite genre and guitar model using a cloud-deployed database of instruments. 
+# Iconic Guitar
+A  web app allowing users to discover iconic guitars and the stories behind them, using a cloud-deployed database of instruments. 
 ## Getting Started
 [
 Click Here](https://iconicguitars.herokuapp.com/)
