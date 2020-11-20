@@ -20,7 +20,7 @@ Click Here](https://iconicguitars.herokuapp.com/)
 ![Show Index Wireframe](https://imgur.com/I40nwGz.png)
 ![Guitar Specs Database ](https://imgur.com/itgAAZI.png),(https://imgur.com/L4NAI77.png),(https://imgur.com/vthbG3U.png)
 ![Guitar Specs Key Values](https://imgur.com/aAyaovF.png)
-![Completed Page]()
+!Click Here](https://iconicguitars.herokuapp.com/)
 ### Models
 There is one model:
 1. Guitar model
