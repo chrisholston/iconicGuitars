@@ -1,4 +1,4 @@
-# Iconic Guitar
+# Iconic Guitars
 A  web app allowing users to discover iconic guitars and the stories behind them, using a cloud-deployed database of instruments. 
 ## Getting Started
 [
