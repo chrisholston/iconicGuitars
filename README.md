@@ -1,5 +1,5 @@
 # Iconic Guitars
-A CRUD web app that lets you search for iconic guitars based on your favorite genre and guitar mode using a cloud-deployed database of instruments. 
+A CRUD web app allowing users to discover iconic guitars based on genre and model, and share some favorites of their own.
 ## Getting Started
 [
 Click Here](https://iconicguitars.herokuapp.com/)
