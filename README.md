@@ -33,3 +33,7 @@ The Guitar model contains the following properties:
 ### CRUD Operations
 ### Displaying the Guitars and the Models
 This app takes advantage of all CRUD operations within Mongoose.
+### Further Operations
+Allow users a filtered search based on artist, genre, guitar model.
+Allow users to stream songs from each specific guitar by incorporating a 3rd party API
+Have each guitar open in a seperate page, and allow user reviews.
