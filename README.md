@@ -1,5 +1,5 @@
 # Iconic Guitars
-A CRUD web app allowing users to discover iconic guitars based on genre and model, and share some favorites of their own.
+A CRUD web app allowing users to discover iconic guitars based on genre and model, and share favorites of their own.
 ## Getting Started
 [
 Click Here](https://iconicguitars.herokuapp.com/)
