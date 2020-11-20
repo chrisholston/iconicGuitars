@@ -32,4 +32,4 @@ The Guitar model contains the following properties:
 * Back story of guitar
 ### CRUD Operations
 ### Displaying the Guitars and the Models
-This app takes advantage of query functions within Mongoose.
+This app takes advantage of all CRUD operations within Mongoose.
